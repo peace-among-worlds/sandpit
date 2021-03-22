@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Alex's Sandpit</title>
+	<link rel="stylesheet" type="text/css" href="style1.css">
+	<script type="text/javascript" src="script1.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+	<div>
+		<h1>Code Sandpit</h1>
+		<p>A place to play with new concepts I learn. Most of the CSS and JS has been copied from other sources, and then tinkered with. If you do see any issues or opportunities to improve, do let me know!</p>
+	</div>
+	<div>
+		<h2>Flexbox</h2>
+		<p>Useful to control layout by row OR column. Works from content out</p>
+		<div class="flexcontainer">
+			<img src="https://wallpaperaccess.com/thumb/891080.jpg">
+			<img src="https://images.unsplash.com/photo-1490535004195-099bc723fa1f?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Nnx8Y2FydG9vbnxlbnwwfHwwfA%3D%3D&auto=format&fit=crop&w=900&q=60" onclick="alert('Peekaboo')" alt="">
+			<img src="https://images.pexels.com/photos/4300128/pexels-photo-4300128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+			<img src="https://i.pinimg.com/564x/cd/5b/e9/cd5be9f5a26ab90970c78d775883b958.jpg" onclick="alert('What the f**k are you looking at')" alt="">
+			<img src="https://images.pexels.com/photos/16516/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+			<img src="https://images.pexels.com/photos/5431330/pexels-photo-5431330.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+		</div>
+	</div>
+	<div class="css grid">
+		<h2>CSS Grid</h2>
+		<p>Useful to control layout by row AND column. Works from layout in</p>
+		<div class="gridcontainer">
+		    <div class="zone green">🦊</div>
+		    <div class="zone red">🐰</div>
+		    <div class="zone blue">🐸</div>
+		    <div class="zone yellow">🦁</div>
+		    <div class="zone green">🦄</div>
+		    <div class="zone red">🐲</div>
+		    <div class="zone purple">🐼</div>
+		    <div class="zone brown">🐻</div>
+	  	</div>
+  	</div>
+  	
+<!-- <div class="forms">
+  		<h2>Forms</h2>
+	  	<div class="bg-img">
+
+	  		<form action="/action_page.php" class="formcontainer">
+	    	<h3>Audi A3</h3>
+
+		    <label for="email"><b>Email</b></label>
+		    <input type="text" placeholder="Username" name="email" required>
+
+		    <label for="psw"><b>Password</b></label>
+		    <input type="password" placeholder="Password" name="psw" required>
+
+		    <button type="submit" class="btn">Unlock</button>
+		  </form>
+		</div>
+	</div>
+-->
+
+  	<div class="arrays">
+		<h2>Arrays</h2>
+		<p>Useful to create and store a list of multiple items in a single variable, like this To Do List</p>
+		<div class="arrayContainer">
+			<div id="myDIV" class="header">
+			  <h3>My To Do List</h3>
+			  <input type="text" id="myInput" placeholder="Test me out...">
+			  <span onclick="newElement()" class="addBtn">Add</span>
+			</div>
+			<ul id="myUL">
+			</ul>
+	  	</div>
+	 </div>
+
+	 <div>
+	 	<h2>Objects</h2>
+	 	<p>Useful to represent a “thing” in your code. That could be a person, a car, a building, a book, a character in a game — basically anything that is made up or can be defined by a set of characteristics</p>
+	 	<p><em>NOTE: A work in progress. Login form created but I need to learn more about how to present a 'newsfeed' of user data after successful login<em></p>	
+	 	 <div class="objects">
+	 	 </div>
+			<!-- Button to open the modal login form -->
+			<button class="objBtn" onclick="document.getElementById('id01').style.display='block'" style="width: auto;">Login</button>
+			<!-- The Modal -->
+			<div id="id01" class="modal">
+
+			  <span onclick="document.getElementById('id01').style.display='none'"
+			id="this" class="close" title="Close Modal">&times;</span>
+
+			  <!-- Modal Content -->
+			  <form class="modal-content animate" action="/action_page.php">
+			    <div class="imgcontainer">
+			      <img src="friend-face.jpg" alt="Avatar" class="avatar">
+			    </div>
+
+			    <div class="modalContainer">
+			      <label for="uname"><b>Username</b></label>
+			      <input type="text" placeholder="Username" name="uname" required>
+
+			      <label for="psw"><b>Password</b></label>
+			      <input type="password" placeholder="Password" name="psw" required>
+
+			      <button type="submit">Login</button>
+			      <label>
+			        <input class="checkBx" type="checkbox" checked="checked" name="remember"> Remember me</label>
+
+			    	<div class="container" style="background-color:#f1f1f1">
+			      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+			      <span class="psw">Forgot <a href="#">password?</a></span>
+			    </div>
+			   	</div>
+			  </form>
+			</div>
+
+  	</div>
+</body>
+</html>
